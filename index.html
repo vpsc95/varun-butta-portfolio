@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun Butta | Finance Leader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor follower -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Floating particles background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+        <div class="nav-logo">
+            <span class="nav-logo-icon">◆</span>
+            <span>VB</span>
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+            <a href="#about" class="nav-link" data-section="about">About</a>
+            <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+            <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+            <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+            <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        </div>
+        <div class="nav-hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                AMERICAN EXPRESS
+            </div>
+            <div class="hero-photo-container animate-on-scroll">
+                <div class="hero-photo-ring"></div>
+                <div class="hero-photo">
+                    <div class="hero-initials">VB</div>
+                </div>
+                <div class="hero-photo-particles"></div>
+            </div>
+            <h1 class="hero-name animate-on-scroll">
+                <span class="hero-name-line">Varun</span>
+                <span class="hero-name-line hero-name-accent">Butta</span>
+            </h1>
+            <div class="hero-title-wrapper animate-on-scroll">
+                <div class="hero-title-line"></div>
+                <p class="hero-title">Manager — American Express</p>
+                <div class="hero-title-line"></div>
+            </div>
+            <p class="hero-subtitle animate-on-scroll">
+                Driving financial transformation through analytics, automation &amp; strategic leadership
+            </p>
+            <div class="hero-stats animate-on-scroll">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="6">0</span><span class="hero-stat-plus">+</span>
+                    <span class="hero-stat-label">Years at AmEx</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="8">0</span><span class="hero-stat-plus">+</span>
+                    <span class="hero-stat-label">Years in Finance</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="4">0</span>
+                    <span class="hero-stat-label">Promotions</span>
+                </div>
+            </div>
+            <div class="hero-cta animate-on-scroll">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Get in Touch</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#projects" class="btn btn-outline">
+                    <span>View Projects</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section about" id="about">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll">
+                    <p class="about-lead">
+                        A results-driven finance professional with <strong>8+ years</strong> of experience in financial analytics, process automation, and strategic decision-making within the global payments industry.
+                    </p>
+                    <p>
+                        Currently serving as <strong>Manager at American Express</strong>, I lead cross-functional initiatives that bridge finance operations with cutting-edge technology. My journey from Financial Analyst to Manager reflects a relentless pursuit of excellence and a deep passion for transforming how financial organizations operate.
+                    </p>
+                    <p>
+                        Armed with a B.Tech in Computer Science from GITM Gurgaon, I bring a unique blend of technical expertise and financial acumen — leveraging tools like <strong>Tableau, UiPath, Blue Prism</strong>, and <strong>Python</strong> to deliver data-driven insights and automate complex financial workflows.
+                    </p>
+                    <div class="about-certifications">
+                        <h4>Certifications</h4>
+                        <div class="cert-list">
+                            <div class="cert-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Using Python with Excel</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Generative AI — Discover the Possibilities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards animate-on-scroll">
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Financial Analytics</h4>
+                        <p>Translating complex data into actionable business strategies</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>Process Automation</h4>
+                        <p>Building RPA solutions that eliminate manual bottlenecks</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h4>Team Leadership</h4>
+                        <p>Mentoring high-performing teams across geographies</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Strategic Thinking</h4>
+                        <p>Driving enterprise-level transformation initiatives</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section class="section experience" id="experience">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">Career Journey</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line">
+                    <div class="timeline-line-fill" id="timelineFill"></div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-side="right">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ring"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div class="timeline-company">
+                                <div class="timeline-company-logo amex">◆</div>
+                                <div>
+                                    <h4>American Express</h4>
+                                    <span class="timeline-duration">6 years 8 months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-role current">
+                            <div class="timeline-role-badge">Current</div>
+                            <h3>Manager</h3>
+                            <span class="timeline-date">Dec 2023 — Present</span>
+                            <p>Leading strategic finance initiatives, managing cross-functional teams, driving process transformation, and overseeing analytical operations across business verticals.</p>
+                        </div>
+                        <div class="timeline-role">
+                            <h3>Lead Analyst</h3>
+                            <span class="timeline-date">Mar 2023 — Nov 2023</span>
+                            <p>Spearheaded analytics transformation projects, mentored junior analysts, and delivered high-impact data solutions to senior leadership.</p>
+                        </div>
+                        <div class="timeline-role">
+                            <h3>Business Analyst</h3>
+                            <span class="timeline-date">Jul 2021 — Feb 2023</span>
+                            <p>Designed and implemented business intelligence dashboards, automated reporting pipelines, and conducted deep-dive financial analysis.</p>
+                        </div>
+                        <div class="timeline-role">
+                            <h3>Financial Analyst</h3>
+                            <span class="timeline-date">Sep 2019 — Jul 2021</span>
+                            <p>Performed financial modeling, variance analysis, and supported budgeting &amp; forecasting cycles for enterprise operations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-side="left">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ring"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div class="timeline-company">
+                                <div class="timeline-company-logo wns">W</div>
+                                <div>
+                                    <h4>WNS Global Services</h4>
+                                    <span class="timeline-duration">2 years 2 months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-role">
+                            <h3>Associate</h3>
+                            <span class="timeline-date">Aug 2017 — Sep 2019</span>
+                            <p>Executed financial operations, reconciliations, and reporting for global clients. Gained foundational expertise in finance processes and analytics.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-side="right">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ring"></div>
+                    </div>
+                    <div class="timeline-card education-card">
+                        <div class="timeline-card-header">
+                            <div class="timeline-company">
+                                <div class="timeline-company-logo edu"><i class="fas fa-graduation-cap"></i></div>
+                                <div>
+                                    <h4>GITM Gurgaon</h4>
+                                    <span class="timeline-duration">Education</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-role">
+                            <h3>B.Tech — Computer Science</h3>
+                            <p>Built a strong technical foundation in programming, data structures, and software engineering — skills that would later become a competitive advantage in the finance industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="section projects" id="projects">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Project Highlights</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="project-tag">Automation</div>
+                    <h3>Project Velocity</h3>
+                    <p>Engineered an end-to-end RPA solution using UiPath &amp; Blue Prism that automated 12+ manual financial reconciliation processes, reducing cycle time by <strong>65%</strong> and saving <strong>4,200+ analyst hours annually</strong>.</p>
+                    <div class="project-impact">
+                        <div class="impact-stat">
+                            <span class="impact-number">65%</span>
+                            <span class="impact-label">Faster</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number">4.2K</span>
+                            <span class="impact-label">Hours Saved</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="project-tag">Analytics</div>
+                    <h3>Eagle Eye Dashboard</h3>
+                    <p>Designed a real-time Tableau-powered executive dashboard integrating 20+ data sources, providing C-suite leadership with a 360° view of financial KPIs, risk metrics, and revenue drivers across <strong>global markets</strong>.</p>
+                    <div class="project-impact">
+                        <div class="impact-stat">
+                            <span class="impact-number">20+</span>
+                            <span class="impact-label">Data Sources</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number">Real-time</span>
+                            <span class="impact-label">Insights</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="project-tag">Risk & Compliance</div>
+                    <h3>Sentinel Framework</h3>
+                    <p>Built a Python-based anomaly detection framework for transaction monitoring that identified <strong>$2.3M in potential fraud</strong> during pilot, now deployed across 3 business units with 94% precision rate.</p>
+                    <div class="project-impact">
+                        <div class="impact-stat">
+                            <span class="impact-number">$2.3M</span>
+                            <span class="impact-label">Fraud Detected</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number">94%</span>
+                            <span class="impact-label">Precision</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="project-tag">Cost Optimization</div>
+                    <h3>OptiCost Initiative</h3>
+                    <p>Led a cross-functional cost optimization program that identified and realized <strong>$8.5M in annual savings</strong> through vendor rationalization, process re-engineering, and strategic resource reallocation across finance operations.</p>
+                    <div class="project-impact">
+                        <div class="impact-stat">
+                            <span class="impact-number">$8.5M</span>
+                            <span class="impact-label">Annual Savings</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number">3</span>
+                            <span class="impact-label">Business Units</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <div class="project-tag">GenAI</div>
+                    <h3>FinGen AI Copilot</h3>
+                    <p>Pioneered the adoption of Generative AI within finance operations — developed an internal copilot that auto-generates financial narratives, variance commentaries, and board-ready summaries, reducing report preparation time by <strong>70%</strong>.</p>
+                    <div class="project-impact">
+                        <div class="impact-stat">
+                            <span class="impact-number">70%</span>
+                            <span class="impact-label">Time Saved</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number">AI-First</span>
+                            <span class="impact-label">Approach</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="project-tag">Forecasting</div>
+                    <h3>Horizon Forecast Engine</h3>
+                    <p>Developed a machine-learning-powered revenue forecasting model that improved prediction accuracy by <strong>23%</strong> over legacy methods, enabling more precise capital allocation and strategic planning across quarters.</p>
+                    <div class="project-impact">
+                        <div class="impact-stat">
+                            <span class="impact-number">23%</span>
+                            <span class="impact-label">More Accurate</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number">ML</span>
+                            <span class="impact-label">Powered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="section skills" id="skills">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">04</span>
+                <h2 class="section-title">Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category animate-on-scroll">
+                    <h3><i class="fas fa-chart-bar"></i> Analytics & Visualization</h3>
+                    <div class="skill-items">
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">📊</span> Tableau
+                            <div class="skill-level" data-level="95"></div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">📈</span> Advanced Excel
+                            <div class="skill-level" data-level="98"></div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">🔍</span> SQL
+                            <div class="skill-level" data-level="88"></div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">📉</span> Power BI
+                            <div class="skill-level" data-level="82"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <h3><i class="fas fa-robot"></i> Automation & RPA</h3>
+                    <div class="skill-items">
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">🤖</span> UiPath
+                            <div class="skill-level" data-level="92"></div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">⚙️</span> Blue Prism
+                            <div class="skill-level" data-level="88"></div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">🔄</span> Process Mining
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <h3><i class="fas fa-code"></i> Programming & AI</h3>
+                    <div class="skill-items">
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">🐍</span> Python
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">🧠</span> Generative AI
+                            <div class="skill-level" data-level="78"></div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">📊</span> Data Modeling
+                            <div class="skill-level" data-level="84"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <h3><i class="fas fa-landmark"></i> Finance Domain</h3>
+                    <div class="skill-items">
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">💰</span> Financial Modeling
+                            <div class="skill-level" data-level="93"></div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">📋</span> Budgeting &amp; Forecasting
+                            <div class="skill-level" data-level="95"></div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">🔒</span> Risk Analysis
+                            <div class="skill-level" data-level="87"></div>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="skill-pill-icon">📊</span> Variance Analysis
+                            <div class="skill-level" data-level="96"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact" id="contact">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">05</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content animate-on-scroll">
+                <p class="contact-lead">
+                    Whether you're exploring strategic partnerships, leadership opportunities, or just want to talk finance &amp; technology — I'd love to hear from you.
+                </p>
+                <div class="contact-cards">
+                    <a href="mailto:varun12011995@gmail.com" class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p>varun12011995@gmail.com</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/varunbutta" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/varunbutta</p>
+                    </a>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Location</h4>
+                        <p>Gurgaon, Haryana, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="footer-diamond">◆</span>
+                <span>Varun Butta</span>
+            </div>
+            <p class="footer-tagline">Empowering financial excellence through technology &amp; leadership</p>
+            <div class="footer-links">
+                <a href="mailto:varun12011995@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/varunbutta" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Varun Butta. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
